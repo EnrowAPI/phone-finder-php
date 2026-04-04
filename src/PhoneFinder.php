@@ -44,9 +44,11 @@ class PhoneFinder
      * @param string $apiKey Your Enrow API key.
      * @param array $params {
      *     @type string $linkedinUrl   LinkedIn profile URL (preferred).
-     *     @type string $fullName      Full name of the person.
+     *     @type string $firstName     First name of the person.
+     *     @type string $lastName      Last name of the person.
      *     @type string $companyDomain Company domain (e.g. "apple.com").
      *     @type string $companyName   Company name (e.g. "Apple Inc.").
+     *     @type string $custom        Custom tracking parameter.
      *     @type string $webhook       Webhook URL for async notification.
      * }
      * @return array Search result containing an id to poll with get().
@@ -58,14 +60,20 @@ class PhoneFinder
         if (!empty($params['linkedinUrl'])) {
             $body['linkedin_url'] = $params['linkedinUrl'];
         }
-        if (!empty($params['fullName'])) {
-            $body['fullname'] = $params['fullName'];
+        if (!empty($params['firstName'])) {
+            $body['first_name'] = $params['firstName'];
+        }
+        if (!empty($params['lastName'])) {
+            $body['last_name'] = $params['lastName'];
         }
         if (!empty($params['companyDomain'])) {
             $body['company_domain'] = $params['companyDomain'];
         }
         if (!empty($params['companyName'])) {
             $body['company_name'] = $params['companyName'];
+        }
+        if (!empty($params['custom'])) {
+            $body['custom'] = $params['custom'];
         }
 
         if (!empty($params['webhook'])) {
@@ -104,8 +112,11 @@ class PhoneFinder
             if (!empty($search['linkedinUrl'])) {
                 $item['linkedin_url'] = $search['linkedinUrl'];
             }
-            if (!empty($search['fullName'])) {
-                $item['fullname'] = $search['fullName'];
+            if (!empty($search['firstName'])) {
+                $item['first_name'] = $search['firstName'];
+            }
+            if (!empty($search['lastName'])) {
+                $item['last_name'] = $search['lastName'];
             }
             if (!empty($search['companyDomain'])) {
                 $item['company_domain'] = $search['companyDomain'];
