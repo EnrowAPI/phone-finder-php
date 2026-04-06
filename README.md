@@ -2,6 +2,8 @@
 
 [![Packagist Version](https://img.shields.io/packagist/v/enrow/phone-finder)](https://packagist.org/packages/enrow/phone-finder)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/EnrowAPI/phone-finder-php)](https://github.com/EnrowAPI/phone-finder-php)
+[![Last commit](https://img.shields.io/github/last-commit/EnrowAPI/phone-finder-php)](https://github.com/EnrowAPI/phone-finder-php/commits)
 
 Find mobile phone numbers from LinkedIn profiles or a name and company. Integrate phone discovery into your sales outreach or enrichment pipeline.
 
@@ -101,7 +103,7 @@ Register at [app.enrow.io](https://app.enrow.io) to get your API key. You get **
 ## Documentation
 
 - [Enrow API documentation](https://docs.enrow.io)
-- [Full Enrow SDK](https://github.com/enrow/enrow-php) -- includes email finder, email verifier, reverse email lookup, and more
+- [Full Enrow SDK](https://github.com/EnrowAPI/enrow-php) -- includes email finder, email verifier, reverse email lookup, and more
 
 ## License
 
